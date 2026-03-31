@@ -8,7 +8,7 @@
 
 | Field | Details |
 |---|---|
-| **Name** | [Your Full Name] |
+| **Name** | Sparsh Patil |
 | **Roll Number** | [Your Roll Number] |
 | **Slot** | [Your Slot] |
 | **Date of Submission** | [DD Month YYYY] |
