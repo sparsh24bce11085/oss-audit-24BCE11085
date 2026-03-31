@@ -6,7 +6,6 @@
 # Description: Displays a welcome screen with system info and
 #              confirms the OS and VLC license details.
 # =============================================================
-
 STUDENT_NAME="Sparsh Patil"       
 ROLL_NUMBER="24BCE11085"  
 SOFTWARE_CHOICE="VLC Media Player"
