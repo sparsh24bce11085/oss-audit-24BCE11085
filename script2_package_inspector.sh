@@ -3,9 +3,6 @@
 # Script 2: FOSS Package Inspector
 # Author: Sparsh Patil | Roll: 24BCE11085
 # Course: Open Source Software | VITyarthi
-# Description: Checks if VLC is installed, displays version
-#              and license info, and prints a philosophy note
-#              about the package using a case statement.
 # =============================================================
 
 PACKAGE="vlc"   
