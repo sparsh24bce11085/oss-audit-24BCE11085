@@ -1,34 +1,30 @@
 #!/bin/bash
 # =============================================================
 # Script 1: System Identity Report
-# Author: [Your Name] | Roll: [Your Roll Number]
+# Author: Sparsh Patil | Roll: 24BCE11085
 # Course: Open Source Software | VITyarthi
 # Description: Displays a welcome screen with system info and
 #              confirms the OS and VLC license details.
 # =============================================================
 
-# --- Student & Software Variables ---
-STUDENT_NAME="[Your Name]"         # Replace with your name
-ROLL_NUMBER="[Your Roll Number]"   # Replace with your roll number
-SOFTWARE_CHOICE="VLC Media Player" # Chosen open-source software
+STUDENT_NAME="Sparsh Patil"       
+ROLL_NUMBER="24BCE11085"  
+SOFTWARE_CHOICE="VLC Media Player"
 
-# --- Gather System Information using command substitution ---
-KERNEL=$(uname -r)                                                            # Linux kernel version
-DISTRO=$(cat /etc/os-release | grep PRETTY_NAME | cut -d= -f2 | tr -d '"')  # Distro name
-USER_NAME=$(whoami)                                                           # Currently logged-in user
-HOME_DIR=$HOME                                                                # Home directory of current user
-UPTIME=$(uptime -p)                                                           # Human-readable system uptime
-CURRENT_DATE=$(date '+%A, %d %B %Y')                                         # Formatted current date
-CURRENT_TIME=$(date '+%H:%M:%S')                                             # Current time
+KERNEL=$(uname -r)                                                            
+DISTRO=$(cat /etc/os-release | grep PRETTY_NAME | cut -d= -f2 | tr -d '"')  
+USER_NAME=$(whoami)                                                          
+HOME_DIR=$HOME                                                               
+UPTIME=$(uptime -p)                                                           
+CURRENT_DATE=$(date '+%A, %d %B %Y')                                        
+CURRENT_TIME=$(date '+%H:%M:%S')
 
-# --- Get VLC version if installed ---
 if command -v vlc &>/dev/null; then
-    VLC_VERSION=$(vlc --version 2>&1 | head -1)   # e.g. VLC media player 3.0.18
+    VLC_VERSION=$(vlc --version 2>&1 | head -1)  
 else
     VLC_VERSION="VLC not found"
 fi
 
-# --- Display the System Identity Report ---
 echo "============================================================"
 echo "        OPEN SOURCE AUDIT — SYSTEM IDENTITY REPORT         "
 echo "============================================================"
@@ -46,7 +42,6 @@ echo "  Time       : $CURRENT_TIME"
 echo "  VLC        : $VLC_VERSION"
 echo "------------------------------------------------------------"
 
-# --- License message for VLC and the OS ---
 echo "  OS License   : The Linux kernel is licensed under GPL v2."
 echo "                 You have the freedom to run, study, modify,"
 echo "                 and distribute this software freely."
