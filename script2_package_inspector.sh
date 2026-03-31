@@ -4,7 +4,6 @@
 # Author: Sparsh Patil | Roll: 24BCE11085
 # Course: Open Source Software | VITyarthi
 # =============================================================
-
 PACKAGE="vlc"   
 
 echo "============================================================"
