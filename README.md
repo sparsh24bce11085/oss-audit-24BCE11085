@@ -1,4 +1,4 @@
-# OSS Audit — [Your Roll Number]
+# OSS Audit — 24BCE11085
 
 > **Open Source Software Audit** | VITyarthi | OSS NGMC Course
 
@@ -9,23 +9,20 @@
 | Field | Details |
 |---|---|
 | **Name** | Sparsh Patil |
-| **Roll Number** | [Your Roll Number] |
-| **Slot** | [Your Slot] |
-| **Date of Submission** | [DD Month YYYY] |
+| **Roll Number** | 24BCE11085 |
+| **Slot** | A24 |
+| **Date of Submission** | 31/03/26 |
 
 ---
 
 ## Chosen Software
 
-**[Software Name]** — [One-line description of what it does]
-
-> Example: **Git** — A distributed version control system licensed under GPL v2, originally created by Linus Torvalds in 2005.
+**VLC Media Player** — A free, cross-platform multimedia player that can play almost any video format, licensed under GPL v2 and LGPL v2.1.
 
 ---
 
 ## Repository Structure
 ```
-oss-audit-[rollnumber]/
 ├── README.md
 ├── script1_system_identity.sh
 ├── script2_package_inspector.sh
@@ -40,15 +37,15 @@ oss-audit-[rollnumber]/
 
 ### Script 1 — System Identity Report
 **File:** `script1_system_identity.sh`  
-**Description:** Displays a system welcome screen showing the Linux distribution name, kernel version, current logged-in user, home directory, system uptime, current date/time, and the open-source license covering the OS.  
+**Description:** Grabs basic system info like the distro, kernel, uptime, and user, and formats it into a clean welcome screen. 
 **Concepts Used:** Variables, `echo`, command substitution (`$()`), output formatting.
 
 ---
 
 ### Script 2 — FOSS Package Inspector
 **File:** `script2_package_inspector.sh`  
-**Description:** Checks whether the chosen software package is installed on the system, retrieves its version and metadata, and uses a `case` statement to print a short philosophical description of its purpose.  
-**Concepts Used:** `if-then-else`, `case` statement, `rpm -qi` / `dpkg -l`, pipe with `grep`.
+**Description:** uses a case statement to print a quick note about what the package stands for.  
+**Concepts Used:** `if-then-else`, `case` statement, `dpkg -l`, pipe with `grep`.
 
 ---
 
@@ -68,7 +65,7 @@ oss-audit-[rollnumber]/
 
 ### Script 5 — Open Source Manifesto Generator
 **File:** `script5_manifesto_generator.sh`  
-**Description:** Interactively asks the user three questions and generates a personalised open-source philosophy statement, saving the output to a `.txt` file named after the current user.  
+**Description:** generates a custom text file with my open source manifesto based on the answers.  
 **Concepts Used:** `read` for user input, string concatenation, file writing with `>` and `>>`, `date` command.
 
 ---
@@ -77,14 +74,14 @@ oss-audit-[rollnumber]/
 
 ### Prerequisites
 
-- A Linux system (Ubuntu/Debian or RHEL/CentOS based)
+- A Linux system (Tested on Ubuntu 24.04 via WSL)
 - Bash shell (`bash --version` to verify)
 - The chosen software package installed (for Script 2)
 
 ### Step 1 — Clone the Repository
 ```bash
-git clone https://github.com/[your-username]/oss-audit-[rollnumber].git
-cd oss-audit-[rollnumber]
+git clone https://github.com/sparsh24bce11085/oss-audit-24BCE11085.git
+cd oss-audit-24BCE11085
 ```
 
 ### Step 2 — Make All Scripts Executable
@@ -111,17 +108,12 @@ chmod +x *.sh
 
 **Script 4 — Log File Analyzer**
 ```bash
-# Basic usage (default keyword: 'error')
 ./script4_log_analyzer.sh /var/log/syslog
-
-# With a custom keyword
-./script4_log_analyzer.sh /var/log/syslog WARNING
 ```
 
 **Script 5 — Open Source Manifesto Generator**
 ```bash
 ./script5_manifesto_generator.sh
-# Follow the on-screen prompts to generate your manifesto
 ```
 
 ---
@@ -131,7 +123,7 @@ chmod +x *.sh
 | Script | Dependencies | Install Command |
 |---|---|---|
 | Script 1 | `uname`, `uptime`, `whoami` | Pre-installed on all Linux systems |
-| Script 2 | `rpm` or `dpkg`, `grep` | Pre-installed on all Linux systems |
+| Script 2 | `dpkg`, `grep` | Pre-installed on all Linux systems |
 | Script 3 | `du`, `ls`, `awk`, `cut` | Pre-installed on all Linux systems |
 | Script 4 | `grep`, `tail` | Pre-installed on all Linux systems |
 | Script 5 | `date`, `cat` | Pre-installed on all Linux systems |
@@ -142,7 +134,7 @@ chmod +x *.sh
 
 ## License
 
-This project was submitted as part of the **Open Source Software (OSS NGMC)** course at VIT. All shell scripts and written content are original work by the student listed above.
+This project was submitted as part of the **Open Source Software (OSS NGMC)** course at VIT. All shell scripts and written content are original work by Sparsh Patil.
 
 ---
 
