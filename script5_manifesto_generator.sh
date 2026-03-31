@@ -21,6 +21,7 @@ echo ""
 read -p "  1. Name one open-source tool you use every day: " TOOL
 echo ""
 
+
 read -p "  2. In one word, what does 'freedom' mean to you?  " FREEDOM
 echo ""
 
