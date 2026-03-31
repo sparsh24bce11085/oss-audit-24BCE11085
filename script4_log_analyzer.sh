@@ -9,7 +9,6 @@
 # Usage: ./script4_log_analyzer.sh /var/log/syslog error
 #        ./script4_log_analyzer.sh /var/log/auth.log warning
 # =============================================================
-
 LOGFILE=$1              
 KEYWORD=${2:-"error"}   
 
