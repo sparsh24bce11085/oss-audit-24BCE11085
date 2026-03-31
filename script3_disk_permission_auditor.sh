@@ -7,7 +7,6 @@
 #              permissions and disk usage, then checks VLC's
 #              specific installation and config directories.
 # =============================================================
-
 DIRS=("/etc" "/var/log" "/home" "/usr/bin" "/tmp")
 
 echo "============================================================"
