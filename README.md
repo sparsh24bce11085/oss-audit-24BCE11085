@@ -1,7 +1,6 @@
 # OSS Audit — 24BCE11085
 
 > **Open Source Software Audit** | VITyarthi | OSS NGMC Course
-
 ---
 
 ## Student Information
